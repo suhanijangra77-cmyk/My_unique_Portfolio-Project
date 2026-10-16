@@ -1,0 +1,31 @@
+/* Global styles: fonts, reset and page background */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* ---------- Base styles ---------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth; /* smooth scrolling for nav links */
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  background: #080B14;
+  color: #F8FAFC;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 { font-family: "Plus Jakarta Sans", sans-serif; line-height: 1.2; }
+ul { list-style: none; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { font-family: "Inter", sans-serif; }
+
+/* visible outline for keyboard users */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #8B5CF6;
+  outline-offset: 3px;
+}
